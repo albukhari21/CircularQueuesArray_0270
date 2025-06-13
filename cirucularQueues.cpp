@@ -39,5 +39,13 @@ public:
                 REAR = REAR + 1;
         }
         queue_array[REAR] = num;
+    }
 
+    void remove() {
+        // cek apakah antrian kosong
+        if (FRONT == -1) {
+            cout << "\nQueue underflow\n";
+            return;
+        }
+    }
 }
